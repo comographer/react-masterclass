@@ -37,7 +37,7 @@ interface RouterState {
 
 function Coin() {
   const [loading, setLoading] = useState(true);
-  const coinId = useParams() as RouteParams;
+  const { coinId } = useParams() as RouteParams;
   const { state } = useLocation() as RouterState;
   const [info, setInfo] = useState({});
   const [priceInfo, setPriceInfo] = useState({});
