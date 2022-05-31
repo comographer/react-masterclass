@@ -108,6 +108,7 @@ function Coin() {
       console.log(priceData);
       setInfo(infoData);
       setPriceInfo(priceData);
+      setLoading(false);
     })();
   }, [coinId]);
   return (
